@@ -15,7 +15,7 @@ When you're done, please open a pull request in this repository and we'll take a
 
 ### Important Notes
 - Please don't spend too long on this! Like *maximum* spend less than a day.
-- Please reach out to anson@ada.support and shihan@ada.support if you have any quetions whatsoever! This should be fun and not stressful.
+- Please reach out to anson@ada.support and shihan@ada.support if you have any questions whatsoever! This should be fun and not stressful.
 - We intentionally left things somewhat ambiguous so that you can be creative. If you'd rather have things specified closely, we can give you more guidance. Just ask!
 - Feel free to use any technology that you'd like, though we recommend Python
 
