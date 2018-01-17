@@ -4,10 +4,20 @@ Hello there! :wave:
 
 This is our challenge for potential new backend developer team members. We'd like to see how you tackle a greenfield development project in Ada's domain (chat). We don't mind what language you use to complete the challenge. Feel free to try something new, or to use technology that you're already comfortable with. That being said, we're partial to Python here at Ada :smile:
 
+## Your Quest
+
 We'd like you to design and build a simple web service responsible for two things:
 
 1. Accept incoming chat messages over HTTP
 2. Serve up conversation history over HTTP
+
+When you're done, please open a pull request in this repository and we'll take a look! Expect us to give some feedback and ask questions to better understand your thought process.
+
+### Important Notes
+- Please don't spend too long on this! Like *maximum* spend less than a day.
+- Please reach out to anson@ada.support if you have any quetions whatsoever! This should be fun and not stressful.
+- We intentionally left things somewhat ambiguous so that you can be creative. If you'd rather have things specified closely, we can give you more guidance. Just ask!
+- Feel free to use any technology that you'd like, though we recommend Python
 
 ## Specifications
 
@@ -51,7 +61,12 @@ The `/conversations/<conversation_id>` resource accepts an HTTP GET action and r
 
 Here, a conversation with two messages is presented.
 
-## Notes
+## Clarifications
+- Conversation IDs can follow any format you choose, as long as they are unique!
+- Conversations should be persisted, but how you persist them is up to you :smile:
 - You can assume that the entities sending incoming chat messages are authenticated and trustworthy (authentication is outside of the scope of this project)
-- Feel free to use any technology that you'd like, though we recommend Python
-- We definitely don't want you to spend too much time on this!
+- Don't worry about pagination on the conversations
+- Don't worry about a list resource for conversations or messages
+- We recommend validating incoming data
+- Tests are always a good idea
+- Please give us instructions on how to run your service when you open your Pull Request
