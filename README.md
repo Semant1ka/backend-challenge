@@ -1,4 +1,4 @@
-# backend-challenge
+# Ada Backend Developer Challenge
 
 Hello there! :wave:
 
