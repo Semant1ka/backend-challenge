@@ -2,7 +2,7 @@
 
 Hello there! :wave:
 
-This is our challenge for potential new backend developer team members. We'd like to see how you tackle an open-ended project in Ada's domain (chat). We don't mind what language you use to complete the challenge. Feel free to try something new, or to use technology that you're already comfortable with. That being said, we're partial to Python here at Ada :smile:
+This is our challenge for potential new backend developer team members. We'd like to see how you tackle an open-ended project in Ada's domain (chat). We don't mind what language you use to complete the challenge. Feel free to try something new, or to use technology that you're already comfortable with. We're partial to Python here at Ada, but please feel free to use whatever you'd like :smile:
 
 ## Your Quest
 
