@@ -2,7 +2,7 @@
 
 Hello there! :wave:
 
-This is our challenge for potential new backend developer team members. We'd like to see how you tackle a greenfield development project in Ada's domain (chat). We don't mind what language you use to complete the challenge. Feel free to try something new, or to use technology that you're already comfortable with. That being said, we're partial to Python here at Ada :smile:
+This is our challenge for potential new backend developer team members. We'd like to see how you tackle an open-ended project in Ada's domain (chat). We don't mind what language you use to complete the challenge. Feel free to try something new, or to use technology that you're already comfortable with. That being said, we're partial to Python here at Ada :smile:
 
 ## Your Quest
 
@@ -14,10 +14,10 @@ We'd like you to design and build a simple web service responsible for two thing
 When you're done, please open a pull request in this repository and we'll take a look! Expect us to give some feedback and ask questions to better understand your thought process.
 
 ### Important Notes
-- Please don't spend too long on this! Like *maximum* spend less than a day.
+- Please don't spend too long on this! Please spend less than 1 working day.
 - Please reach out to anson@ada.support and shihan@ada.support if you have any questions whatsoever! This should be fun and not stressful.
 - We intentionally left things somewhat ambiguous so that you can be creative. If you'd rather have things specified closely, we can give you more guidance. Just ask!
-- Feel free to use any technology that you'd like, though we recommend Python
+- Feel free to use any technology and programming language that you'd like
 
 ## Specifications
 
