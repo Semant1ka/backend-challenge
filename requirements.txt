@@ -1,5 +1,4 @@
 Flask
-itsdangerous
-Jinja2
-MarkupSafe
 Werkzeug
+marshmallow
+requests

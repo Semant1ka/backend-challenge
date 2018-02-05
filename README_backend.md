@@ -4,7 +4,8 @@
 - configuration.py - contains setup script for Db
 - service.py - contains API implementation
 - settings.py - contains settings for the Flask app
-- test.py - contains tests (your Captain Obvious)
+- /tests/ - contains tests (your Captain Obvious)
+- schema.py - contains json schema for request validation
 
 ## How to run backend challenge
 
@@ -13,7 +14,7 @@
 In project folder run 
 
 ```
-$ sudo dockebuild -t service .
+$ sudo docker build -t service .
 $ sudo docker run -p 4000:5000 service
 ```
 

@@ -5,6 +5,7 @@ import tempfile
 import unittest
 import service
 import settings
+import tests.data as data
 
 
 class BaseFixture(unittest.TestCase):
@@ -34,14 +35,14 @@ class TestApi(BaseFixture):
 
     def test_create_message_succeed(self):
         # check status code
-        self.assertEqual(self.create_message(self.test_messages['anson_valid']), 201)
+        self.assertEqual(self.create_message(data.test_messages['anson_valid']), 201)
 
         # check record actually added to Db
-        self.assertEqual(len(self.check_message_in_db(self.test_messages['anson_valid']).fetchall()), 1)
+        self.assertEqual(len(self.check_message_in_db(data.test_messages['anson_valid']).fetchall()), 1)
 
     def test_create_message_bad_request(self):
         # check status code
-        self.assertEqual(self.create_message(self.test_messages['anson_invalid']), 400)
+        self.assertEqual(self.create_message(data.test_messages['anson_invalid']), 400)
 
     def test_get_history_succeed(self):
         # should we check date, how?
@@ -60,8 +61,8 @@ class TestApi(BaseFixture):
                 ]
             }
 
-        if self.create_message(self.test_messages['bohemian_valid']) is not 201 \
-                or self.create_message(self.test_messages['rhapsody_valid']) is not 201:
+        if self.create_message(data.test_messages['bohemian_valid']) is not 201 \
+                or self.create_message(data.test_messages['rhapsody_valid']) is not 201:
             raise Exception("Failed to submit new messages")
 
         # request history
@@ -92,6 +93,13 @@ class TestApi(BaseFixture):
         # check status code
         self.assertEqual(response.status_code, 404)
 
+    def test_bad_conversation_id(self):
+        # request history
+        response = self.app.get("/conversations/test")
+
+        # check status code
+        self.assertEqual(response.status_code, 400)
+
     def create_message(self, message):
         """Helper method to add a message"""
         message = json.dumps(message)
@@ -107,43 +115,6 @@ class TestApi(BaseFixture):
                           message['sender'],
                           message['message']))
             return c
-
-
-    test_messages = {
-
-        "anson_valid":
-            {
-                "sender": "anson",
-                "conversation_id": "1234",
-                "message": "I'm a teapot"
-            },
-
-        "anson_invalid":
-            {
-
-                "wrong_sender": "anson",
-                "conversation_id": "1234",
-                "message": "I'm a teapot"
-            },
-
-        "bohemian_valid":
-            {
-                "sender": "bohemian",
-                "conversation_id": "1111",
-                "message": "Is this the real life? Is this just fantasy?"
-            },
-
-        "rhapsody_valid":
-            {
-                "sender": "rhapsody",
-                "conversation_id": "1111",
-                "message": "Caught in a landslide, no escape from reality"
-
-            }
-
-    }
-
-
 
 
 
